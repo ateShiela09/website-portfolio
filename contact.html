@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Portfolio</title>
+  <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<header>
+  <div class="logo">ateShiela</div>
+  <nav class="nav">
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="project.html">project</a>
+    <a href="contact.html">contact</a>
+  </nav>
+</header>
+
+<!-- CONTACT CARD -->
+<div class="contact-container">
+  <!-- LEFT SIDE -->
+  <div class="left-card">
+    <h1>KEEP IN<br>TOUCH</h1>
+    <div class="with-me">With Me</div>
+
+    <!-- Decorative Flowers -->
+    <div class="flower flower-top-left"></div>
+    <div class="flower flower-bottom-left"></div>
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="right-card">
+    <div class="intro-text">
+      If you would like to discuss a potential collaboration or have any questions, please feel free to contact me.
+    </div>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <strong>Phone</strong>
+        <button class="contact-btn" onclick="copyText('+63 9475518386')">+63 947 551 8386</button>
+      </div>
+
+      <div class="contact-item">
+        <strong>Email</strong>
+        <button class="contact-btn" onclick="copyText('shielamaechubby100987@gmail.com')">shielamaechubby100987@gmail.com</button>
+      </div>
+
+      <div class="contact-item">
+        <strong>Social Media</strong>
+        <button class="contact-btn" onclick="copyText('@ateShielamaealedro')">@ateShielamaealedro</button>
+      </div>
+
+      <div class="contact-item">
+        <strong>Website</strong>
+        <button class="contact-btn" onclick="copyText('www.ateShiela09.com')">www.ateShiela09.com</button>
+      </div>
+    </div>
+
+    <!-- Decorative Flowers -->
+    <div class="flower flower-top-right"></div>
+    <div class="flower flower-bottom-right"></div>
+  </div>
+</div>
+
+<script>
+  // Copy text function
+  function copyText(text) {
+    navigator.clipboard.writeText(text);
+    alert("Copied: " + text);
+  }
+</script>
+
+</body>
+</html>
